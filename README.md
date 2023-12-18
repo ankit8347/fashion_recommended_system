@@ -17,12 +17,12 @@ In this project, we propose a model that uses Convolutional Neural Network and t
 Training the neural networks
 Once the data is pre-processed, the neural networks are trained, utilizing transfer learning from ResNet50. More additional layers are added in the last layers that replace the architecture and weights from ResNet50 in order to fine-tune the network model to serve the current issue. The figure shows the ResNet50 architecture.
 
-Alt text
+
 
 Getting the inventory
 The images from Kaggle Fashion Product Images Dataset. The inventory is then run through the neural networks to classify and generate embeddings and the output is then used to generate recommendations. The Figure shows a sample set of inventory data
 
-Alt text
+
 
 Recommendation generation
 To generate recommendations, our proposed approach uses Sklearn Nearest neighbours Oh Yeah. This allows us to find the nearest neighbours for the given input image. The similarity measure used in this Project is the Cosine Similarity measure. The top 5 recommendations are extracted from the database and their images are displayed.
